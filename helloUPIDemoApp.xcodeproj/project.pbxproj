@@ -6,14 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXCopyFilesBuildPhase section */
+		69F24D282D2E5990009C2B9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		69F24D132D2E595B009C2B9A /* helloUPIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloUPIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		69F24D712D2EBB99009C2B9A /* Exceptions for "helloUPIDemoApp" folder in "helloUPIDemoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 69F24D122D2E595B009C2B9A /* helloUPIDemoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		69F24D152D2E595B009C2B9A /* helloUPIDemoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				69F24D712D2EBB99009C2B9A /* Exceptions for "helloUPIDemoApp" folder in "helloUPIDemoApp" target */,
+			);
 			path = helloUPIDemoApp;
+			sourceTree = "<group>";
+		};
+		69F24D332D2E8265009C2B9A /* Frameworks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +63,7 @@
 		69F24D0A2D2E595B009C2B9A = {
 			isa = PBXGroup;
 			children = (
+				69F24D332D2E8265009C2B9A /* Frameworks */,
 				69F24D152D2E595B009C2B9A /* helloUPIDemoApp */,
 				69F24D142D2E595B009C2B9A /* Products */,
 			);
@@ -55,6 +87,7 @@
 				69F24D0F2D2E595B009C2B9A /* Sources */,
 				69F24D102D2E595B009C2B9A /* Frameworks */,
 				69F24D112D2E595B009C2B9A /* Resources */,
+				69F24D282D2E5990009C2B9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -62,6 +95,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				69F24D152D2E595B009C2B9A /* helloUPIDemoApp */,
+				69F24D332D2E8265009C2B9A /* Frameworks */,
 			);
 			name = helloUPIDemoApp;
 			packageProductDependencies = (
@@ -252,8 +286,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"helloUPIDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = helloUPIDemoApp/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to provide personalized recommendations and to allow you to share content with your friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for uploading audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -264,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.helloUPIDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctpl.ioshelloupisdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -280,8 +324,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"helloUPIDemoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = helloUPIDemoApp/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to provide personalized recommendations and to allow you to share content with your friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for uploading audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.helloUPIDemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctpl.ioshelloupisdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
