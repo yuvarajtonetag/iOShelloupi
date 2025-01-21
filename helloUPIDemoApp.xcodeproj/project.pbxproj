@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		690AEA7E2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */; };
+		690AEA7F2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		69F24D282D2E5990009C2B9A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -13,6 +18,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				690AEA7F2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -20,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello_UPI_iOS_Framework.framework; sourceTree = "<group>"; };
 		69F24D132D2E595B009C2B9A /* helloUPIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloUPIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -42,11 +49,6 @@
 			path = helloUPIDemoApp;
 			sourceTree = "<group>";
 		};
-		69F24D332D2E8265009C2B9A /* Frameworks */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690AEA7E2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +66,7 @@
 		69F24D0A2D2E595B009C2B9A = {
 			isa = PBXGroup;
 			children = (
-				69F24D332D2E8265009C2B9A /* Frameworks */,
+				690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */,
 				69F24D152D2E595B009C2B9A /* helloUPIDemoApp */,
 				69F24D142D2E595B009C2B9A /* Products */,
 			);
@@ -95,7 +98,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				69F24D152D2E595B009C2B9A /* helloUPIDemoApp */,
-				69F24D332D2E8265009C2B9A /* Frameworks */,
 			);
 			name = helloUPIDemoApp;
 			packageProductDependencies = (
@@ -303,6 +305,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +344,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
