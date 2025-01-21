@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		690AEA7E2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */; };
-		690AEA7F2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69C8D5ED2D3F90430052B7F0 /* Hello_UPI_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C8D5EB2D3F903F0052B7F0 /* Hello_UPI_iOS_Framework.framework */; };
+		69C8D5EE2D3F90430052B7F0 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69C8D5EB2D3F903F0052B7F0 /* Hello_UPI_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				690AEA7F2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */,
+				69C8D5EE2D3F90430052B7F0 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello_UPI_iOS_Framework.framework; sourceTree = "<group>"; };
+		69C8D5EB2D3F903F0052B7F0 /* Hello_UPI_iOS_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello_UPI_iOS_Framework.framework; sourceTree = "<group>"; };
 		69F24D132D2E595B009C2B9A /* helloUPIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloUPIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				690AEA7E2D3F842200386343 /* Hello_UPI_iOS_Framework.framework in Frameworks */,
+				69C8D5ED2D3F90430052B7F0 /* Hello_UPI_iOS_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		69F24D0A2D2E595B009C2B9A = {
 			isa = PBXGroup;
 			children = (
-				690AEA7C2D3F841E00386343 /* Hello_UPI_iOS_Framework.framework */,
+				69C8D5EB2D3F903F0052B7F0 /* Hello_UPI_iOS_Framework.framework */,
 				69F24D152D2E595B009C2B9A /* helloUPIDemoApp */,
 				69F24D142D2E595B009C2B9A /* Products */,
 			);

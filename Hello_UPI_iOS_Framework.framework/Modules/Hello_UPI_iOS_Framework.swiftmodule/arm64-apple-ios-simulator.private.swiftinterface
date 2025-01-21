@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name Hello_UPI_iOS_Framework
+import AVFoundation
+import CommonCrypto
+import Contacts
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+@_exported import Hello_UPI_iOS_Framework
+import NaturalLanguage
+import Network
+import Speech
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+public struct SDKConfiguration {
+  public init(environment: Hello_UPI_iOS_Framework.EnvironmentConfig, language: Hello_UPI_iOS_Framework.Language, email: Swift.String, bic: Swift.String, subscriptionKey: Swift.String, googleServiceDict: [Swift.String : Swift.String], onDismiss: @escaping ([Swift.String : Any]?) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class MySDK {
+  public static let shared: Hello_UPI_iOS_Framework.MySDK
+  public func initialize(with config: Hello_UPI_iOS_Framework.SDKConfiguration)
+  public func getSDKView() -> some SwiftUICore.View
+  
+  @objc deinit
+}
+public enum Language : Swift.CaseIterable {
+  case hindi
+  case english
+  case tamil
+  case telugu
+  case malayalam
+  case bengali
+  case kannada
+  case gujarati
+  case marathi
+  case punjabi
+  case assamese
+  case odia
+  case urdu
+  public func getValue() -> Swift.String
+  public var capitalizedString: Swift.String {
+    get
+  }
+  public var getWelcomeMessage: Swift.String {
+    get
+  }
+  public static func == (a: Hello_UPI_iOS_Framework.Language, b: Hello_UPI_iOS_Framework.Language) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [Hello_UPI_iOS_Framework.Language]
+  nonisolated public static var allCases: [Hello_UPI_iOS_Framework.Language] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor {
+  public static let shared: Hello_UPI_iOS_Framework.NetworkMonitor
+  public func startMonitoring()
+  public func stopMonitoring()
+  @objc deinit
+}
+public enum EnvironmentConfig : Swift.String {
+  case development
+  case staging
+  case pre_production
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Hello_UPI_iOS_Framework.Language : Swift.Equatable {}
+extension Hello_UPI_iOS_Framework.Language : Swift.Hashable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.Equatable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.Hashable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.RawRepresentable {}
