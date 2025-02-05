@@ -11,8 +11,8 @@
 		27A1B7852D52A4600090F91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A1B7842D52A4600090F91D /* Assets.xcassets */; };
 		27A1B7882D52A4600090F91D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27A1B7872D52A4600090F91D /* Preview Assets.xcassets */; };
 		27A1B78F2D52A4A40090F91D /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A1B78E2D52A4A40090F91D /* HomeScreen.swift */; };
-		694DC3C32D53C64600C3F734 /* Hello_UPI_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694DC3C12D53C63400C3F734 /* Hello_UPI_iOS_Framework.framework */; };
-		694DC3C42D53C64600C3F734 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 694DC3C12D53C63400C3F734 /* Hello_UPI_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		694DC3C72D53CC8700C3F734 /* Hello_UPI_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694DC3C52D53CC3C00C3F734 /* Hello_UPI_iOS_Framework.framework */; };
+		694DC3C82D53CC8700C3F734 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 694DC3C52D53CC3C00C3F734 /* Hello_UPI_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				694DC3C42D53C64600C3F734 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */,
+				694DC3C82D53CC8700C3F734 /* Hello_UPI_iOS_Framework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +35,7 @@
 		27A1B7842D52A4600090F91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27A1B7872D52A4600090F91D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27A1B78E2D52A4A40090F91D /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		694DC3C12D53C63400C3F734 /* Hello_UPI_iOS_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello_UPI_iOS_Framework.framework; sourceTree = "<group>"; };
+		694DC3C52D53CC3C00C3F734 /* Hello_UPI_iOS_Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hello_UPI_iOS_Framework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694DC3C32D53C64600C3F734 /* Hello_UPI_iOS_Framework.framework in Frameworks */,
+				694DC3C72D53CC8700C3F734 /* Hello_UPI_iOS_Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +53,7 @@
 		27A1B7742D52A45E0090F91D = {
 			isa = PBXGroup;
 			children = (
-				694DC3C12D53C63400C3F734 /* Hello_UPI_iOS_Framework.framework */,
+				694DC3C52D53CC3C00C3F734 /* Hello_UPI_iOS_Framework.framework */,
 				27A1B77F2D52A45E0090F91D /* helloUPIDemoApp */,
 				27A1B77E2D52A45E0090F91D /* Products */,
 			);

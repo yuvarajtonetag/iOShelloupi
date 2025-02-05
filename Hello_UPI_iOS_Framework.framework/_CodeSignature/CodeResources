@@ -14,55 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		A90CEn3Uf1MmEN7eRCFWAmadLSU=
+		vaZxEiWhnN2HmnZW0LlnKwAqfSY=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		31p5iDfN5moe/4s+S3XR1iKJoOI=
+		3KLEpW/yhcLBj3fDPFNaRYQJ0vE=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		sTCNU1XP8OM76oU8xcqHKzC3A9k=
+		HEEEM1JQxpbysgBH80hTePC+SyA=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		voFvAKbn40mHPrE3YvWob2kNU50=
+		7PizFEYwbsutg+wr+9PFJJ/aEYc=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Rh1YLFyO65NxbNn0dYa7DGDUJXU=
+		9eT/2yTrXCQncbWBG7hESPhRSFg=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		2/3ti8VbDD1yzv54EFARpQjD74k=
+		7PizFEYwbsutg+wr+9PFJJ/aEYc=
 		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Rh1YLFyO65NxbNn0dYa7DGDUJXU=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		+wY7UAdLSpQkYSmoFUUKYrhSwzA=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		voFvAKbn40mHPrE3YvWob2kNU50=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		95tdlDacBcyfX1JB94BvarfAKKc=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		tGR7yG+HPfxSwUS52K00Lx0rgXQ=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<data>
-		95tdlDacBcyfX1JB94BvarfAKKc=
-		</data>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		2QOrXDiGbsYGcdjGjFuLcKUpemg=
+		t/da1NLjc2805l6w+FAX+yYpcKI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,88 +61,46 @@
 			L1hApA1hOcDtUg4a/u2ycSlu5qRAhUeMTphYPs1jTUc=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9A6WnnIhd3gA/4txz4KsX0fHbpqGrHbKvwoMxxUR7Mo=
+			w54AO3bw0byotXwQJ5Tc49rWCKOTQoYU8eZIuRRiQZk=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dlBVex+9RSyslMV1YotsBRqd0xR0dusvht2vH0QboA=
+			bYAzM4RsSqBp4HWfSDnMR/4PWw3BiFGEdSSYLQNMcuU=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UDhCyfLW5ZdXurroJZVpPOE/GSka7uwi7IJbwYgVUAA=
+			SRlJj84OKVmQnPQ+B/KGOWCoWMVwoK2L3sEpBp7DPYk=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVgLV/l1DJy5cM6EoeS4SKLFDjADWIoDXXA/eq8YV9c=
+			CF7WrqtSfHWgntOsEYouqjOLYxseHguE1qrBiqaxOoI=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lL57DtD69wazcqXb/5RlSSyt9yZ8dp+sJ0UD+5rAgfw=
+			SRlJj84OKVmQnPQ+B/KGOWCoWMVwoK2L3sEpBp7DPYk=
 			</data>
 		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVgLV/l1DJy5cM6EoeS4SKLFDjADWIoDXXA/eq8YV9c=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2PqQqEF27w7yJa+X79K4pjNY7MlpDZl6RGFAgLpPFjY=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UDhCyfLW5ZdXurroJZVpPOE/GSka7uwi7IJbwYgVUAA=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4GscgqQjWRa+6Dfb3+JNJOLO/MOwrbfVA+Txd13JXlA=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8+XoaGp8mWFcK8oSVQo57a/VR8QN2M/HV++KL6SXQuk=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4GscgqQjWRa+6Dfb3+JNJOLO/MOwrbfVA+Txd13JXlA=
-			</data>
-		</dict>
-		<key>Modules/Hello_UPI_iOS_Framework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pWl31gkcPiM42Hu4swM5RkN3IrkyJuwLu/2U+1h2W9I=
+			5rFifM1NFxkcUjr3NJxA1tI+VGTTkvWwAVhpcxA6r+Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
