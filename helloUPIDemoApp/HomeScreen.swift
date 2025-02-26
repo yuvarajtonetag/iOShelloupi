@@ -6,9 +6,9 @@ import AVFoundation
 
 struct HomeScreen: View {
     // This property determines the current environment
-    @State private var environment = "Development"
+    @State private var environment = "Staging"
     
-    @State private var selectedLanguage: Language? = nil
+    @State private var selectedLanguage: Language = .noneLang
     @State private var email = ""
     @State private var bic = ""
     @State private var apiKey = ""
@@ -24,9 +24,10 @@ struct HomeScreen: View {
     @State private var isSDKInitialized = false
     
     //This dict contains the final response data from SDK
-    @State var contentToDisplay: [String:Any]? = nil
+    @State var contentToDisplay: String = ""
+    @State var apiResopnseText: String = ""
     
-    let environments = ["Development", "Staging", "Pre Production", "Production"]
+    let environments = [ "Staging", "Production"]
     
     var body: some View {
         VStack{
@@ -61,9 +62,8 @@ struct HomeScreen: View {
                     
                     
                     SubmitButtonSection()
-                    if let contentToDisplay = contentToDisplay {
-                        generatedText(dict: contentToDisplay)
-                    }
+                    Text(contentToDisplay)
+                    Text(apiResopnseText)
                 }
                 .alert(isPresented: $showAlert) {
                     Alert(title: Text("Validation Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
@@ -134,8 +134,8 @@ struct HomeScreen: View {
                 hideKeyboard()
             }) {
                 HStack {
-                    Text(selectedLanguage?.capitalizedString ?? "")
-                        .foregroundColor(selectedLanguage == nil ? .gray : .black)
+                    Text(selectedLanguage.capitalizedString)
+                        .foregroundColor(selectedLanguage == .noneLang ? .gray : .black)
                     
                     Spacer()
                     Image(systemName: "chevron.down")
@@ -156,7 +156,9 @@ struct HomeScreen: View {
                 .padding()
             Divider()
             ScrollView {
-                ForEach(Language.allCases, id: \.self) { language in
+                ForEach(Language.allCases.filter({ lang in
+                    lang != .noneLang
+                }), id: \.self) { language in
                     Button(action: {
                         selectedLanguage = language
                         isLanguagePickerVisible.toggle()
@@ -231,29 +233,6 @@ struct HomeScreen: View {
         }
     }
     
-    private func generatedText(dict: [String: Any]) -> some View{
-        var showText = "HelloUPI sdk response"
-        // Response will be received in the main_content key
-        let mainContent = dict["main_content"] as? [String: Any] ?? [:]
-        
-        //If the main content has session_id which means the Transaction is initiated successfully
-        if let session_id = mainContent["session_id"] as? String {
-            showText+="\n\nSession Id: \(session_id)"
-            let flow_type = mainContent["flow_Type"] as? String ?? ""
-            showText+="\n\nFlow type: \(flow_type)"
-            let intent = mainContent["intent"] as? String ?? ""
-            showText+="\n\nIntent: \(intent)"
-            let callEntityData = try! JSONSerialization.data(withJSONObject: mainContent["callback_entity"] ?? [:])
-            showText+="\n\nCallback Entity:: \(mainContent["callback_entity"] ?? [:])"
-        }// If there is any error occured, error_code and its error_desc will be received
-        else if let error_code = mainContent["error_code"] as? Int {
-            if let error_desc = mainContent["error_desc"]{
-                showText+="\n\nError Code: \(error_code), \(error_desc)"
-            }
-        }
-        return Text(showText)
-    }
-    
     private func hideKeyboard() {
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
@@ -263,7 +242,7 @@ struct HomeScreen: View {
             alertMessage = "Please select an environment."
             return false
         }
-        if selectedLanguage == .none {
+        if selectedLanguage == .noneLang {
             alertMessage = "Please select a language."
             return false
         }
@@ -377,12 +356,12 @@ struct HomeScreen: View {
               !email.isEmpty,
               !bic.isEmpty,
               !subscriptionKey.isEmpty,
-        let selectedLanguage = selectedLanguage  else {
+              selectedLanguage != .noneLang  else {
             debugPrint("Error: All fields are required")
             return
         }
         
-        let ttsModel = selectedLanguage.getValue() == "mr" ? "Wavenet" : "Standard"
+        let ttsModel = selectedLanguage.getLangCode() == "mr" ? "Wavenet" : "Standard"
         let voice = "A"
         let apiURL = "https://texttospeech.googleapis.com/v1beta1/text:synthesize"
         let googleServicesDict = [
@@ -391,14 +370,11 @@ struct HomeScreen: View {
             "apiURL": apiURL,
             "apiKey": apiKey
         ]
-        var envVar = EnvironmentConfig.development
+        var envVar = EnvironmentConfig.staging
         if environment == environments[1]{
-            envVar = EnvironmentConfig.staging
-        }else if environment == environments[2]{
-            envVar = EnvironmentConfig.pre_production
-        }else if environment == environments[3]{
             envVar = EnvironmentConfig.production
         }
+        
         
         //Start monitor the network from here
         NetworkMonitor.shared.startMonitoring()
@@ -411,18 +387,74 @@ struct HomeScreen: View {
             bic: bic,
             subscriptionKey: subscriptionKey,
             googleServiceDict: googleServicesDict,
-            onDismiss: dismissSDK
+            apiListener: self,
+            chatBotListener: self
         )
         debugPrint(config)
         
         MySDK.shared.initialize(with: config)
         isSDKInitialized = true
+//        let dispatchQueue = DispatchQueue(label: "serialqueue", qos: .userInitiated)
+//        dispatchQueue.asyncAfter(deadline: .now()+5) {
+//            config.fetchLatestSubscriptionKey(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
+//        }
+//        dispatchQueue.asyncAfter(deadline: .now()+8) {
+//            config.fetchSubscriptionKeyDetails(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
+//        }
+        
     }
     
-    //Pass this dismissSDK method in SDKConfiguration to get the final response from SDK
-    private func dismissSDK(dict: [String: Any]?) {
-        isSDKInitialized = false
-        debugPrint(String(describing: dict))
-        contentToDisplay = dict
+}
+
+extension HomeScreen: APIListener {
+    func TTOnApiResponse(apiResponse: String) {
+        let showText = "Latest Subscription Key: \(apiResponse)"
+        DispatchQueue.main.async {
+            apiResopnseText = showText
+        }
+        debugPrint("API Response is \(apiResponse)")
+    }
+    
+    func TTOnApiError(code: Int, message: String) {
+        let err = "Api Error: \(code), \(message)"
+        DispatchQueue.main.async {
+            apiResopnseText = err
+        }
+        debugPrint(err)
+    }
+}
+
+extension HomeScreen: ChatBotListener {
+    func TTOnChatBotResponse(txnType: Int, message: String, sessionId: String) {
+        DispatchQueue.main.async {
+            isSDKInitialized = false
+            var showText = ""
+            if !message.isEmpty {
+                showText += "Sdk response\n\n"
+                if !sessionId.isEmpty {
+                    showText += "Session Id : \(sessionId)\n"
+                }
+                showText += "Flow type : \(txnType)\n"
+                showText += "Intent : \(TTUtils.getIntentValueByKey(txnType: txnType))\n\n"
+                showText += "Callback Entity : \(message)"
+            } else {
+                showText += "Sdk response\n\n"
+                if !sessionId.isEmpty {
+                    showText += "Session Id : \(sessionId)\n"
+                }
+                showText += "Flow type : \(txnType)\n"
+                showText += "Intent : \(TTUtils.getIntentValueByKey(txnType: txnType))\n\n"
+            }
+            contentToDisplay = showText
+        }
+    }
+    
+    func TTOnError(code: Int, message: String) {
+        DispatchQueue.main.async {
+            isSDKInitialized = false
+            var showText = "Sdk response\n\n"
+            showText += "Api Error: \(code), \(message)"
+            contentToDisplay = showText
+        }
     }
 }

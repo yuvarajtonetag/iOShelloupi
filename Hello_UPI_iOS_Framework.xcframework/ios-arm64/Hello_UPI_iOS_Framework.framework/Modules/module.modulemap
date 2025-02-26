@@ -1,0 +1,6 @@
+framework module Hello_UPI_iOS_Framework {
+  umbrella header "Hello_UPI_iOS_Framework.h"
+  export *
+
+  module * { export * }
+}

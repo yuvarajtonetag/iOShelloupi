@@ -1,0 +1,100 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Hello_UPI_iOS_Framework
+import AVFoundation
+import CommonCrypto
+import Contacts
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+@_exported import Hello_UPI_iOS_Framework
+import NaturalLanguage
+import Network
+import Speech
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol ChatBotListener {
+  func TTOnChatBotResponse(txnType: Swift.Int, message: Swift.String, sessionId: Swift.String)
+  func TTOnError(code: Swift.Int, message: Swift.String)
+}
+
+@_hasMissingDesignatedInitializers public class TTUtils {
+  public static func getIntentValueByKey(txnType: Swift.Int) -> Swift.String
+  public static func getErrorResponseMessage(code: Swift.Int) -> Swift.String
+  @objc deinit
+}
+public struct SDKConfiguration {
+  public init(environment: Hello_UPI_iOS_Framework.EnvironmentConfig, language: Hello_UPI_iOS_Framework.Language, email: Swift.String, bic: Swift.String, subscriptionKey: Swift.String, googleServiceDict: [Swift.String : Swift.String], apiListener: any Hello_UPI_iOS_Framework.APIListener, chatBotListener: any Hello_UPI_iOS_Framework.ChatBotListener)
+  public func fetchSubscriptionKeyDetails(bic: Swift.String, subscriptionKey: Swift.String, selectedEnviornment: Swift.String)
+  public func fetchLatestSubscriptionKey(bic: Swift.String, subscriptionKey: Swift.String, selectedEnviornment: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class MySDK {
+  public static let shared: Hello_UPI_iOS_Framework.MySDK
+  public func initialize(with config: Hello_UPI_iOS_Framework.SDKConfiguration)
+  public func getSDKView() -> some SwiftUI.View
+  
+  @objc deinit
+}
+public protocol APIListener {
+  func TTOnApiResponse(apiResponse: Swift.String)
+  func TTOnApiError(code: Swift.Int, message: Swift.String)
+}
+public enum Language : Swift.Int, Swift.CaseIterable {
+  case noneLang
+  case hindi
+  case english
+  case tamil
+  case telugu
+  case malayalam
+  case bengali
+  case kannada
+  case gujarati
+  case marathi
+  case punjabi
+  case assamese
+  case odia
+  case urdu
+  public func getLangCode() -> Swift.String
+  public func getValue() -> Swift.Int
+  public var capitalizedString: Swift.String {
+    get
+  }
+  public var getWelcomeMessage: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [Hello_UPI_iOS_Framework.Language]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [Hello_UPI_iOS_Framework.Language] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor {
+  public static let shared: Hello_UPI_iOS_Framework.NetworkMonitor
+  public func startMonitoring()
+  public func stopMonitoring()
+  @objc deinit
+}
+public enum EnvironmentConfig : Swift.String {
+  case staging
+  case production
+  public func getValue() -> Swift.String
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Hello_UPI_iOS_Framework.Language : Swift.Equatable {}
+extension Hello_UPI_iOS_Framework.Language : Swift.Hashable {}
+extension Hello_UPI_iOS_Framework.Language : Swift.RawRepresentable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.Equatable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.Hashable {}
+extension Hello_UPI_iOS_Framework.EnvironmentConfig : Swift.RawRepresentable {}
