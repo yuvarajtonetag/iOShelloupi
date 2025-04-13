@@ -134,7 +134,7 @@ struct HomeScreen: View {
                 hideKeyboard()
             }) {
                 HStack {
-                    Text(selectedLanguage.capitalizedString)
+                    Text(selectedLanguage == .noneLang ? "Select Language" : selectedLanguage.capitalizedString)
                         .foregroundColor(selectedLanguage == .noneLang ? .gray : .black)
                     
                     Spacer()
@@ -394,18 +394,17 @@ struct HomeScreen: View {
         
         MySDK.shared.initialize(with: config)
         isSDKInitialized = true
-//        let dispatchQueue = DispatchQueue(label: "serialqueue", qos: .userInitiated)
-//        dispatchQueue.asyncAfter(deadline: .now()+5) {
-//            config.fetchLatestSubscriptionKey(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
-//        }
-//        dispatchQueue.asyncAfter(deadline: .now()+8) {
-//            config.fetchSubscriptionKeyDetails(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
-//        }
+
+//      Response of the below methods can be received in APIListener methods
+//        config.fetchLatestSubscriptionKey(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
+//        config.fetchSubscriptionKeyDetails(bic: bic, subscriptionKey: subscriptionKey, selectedEnviornment: envVar.rawValue)
+//
         
     }
     
 }
 
+// Methods to listen to subscription key status
 extension HomeScreen: APIListener {
     func TTOnApiResponse(apiResponse: String) {
         let showText = "Latest Subscription Key: \(apiResponse)"
@@ -424,6 +423,7 @@ extension HomeScreen: APIListener {
     }
 }
 
+//Methods to trigger when chatbot sdk exits
 extension HomeScreen: ChatBotListener {
     func TTOnChatBotResponse(txnType: Int, message: String, sessionId: String) {
         DispatchQueue.main.async {

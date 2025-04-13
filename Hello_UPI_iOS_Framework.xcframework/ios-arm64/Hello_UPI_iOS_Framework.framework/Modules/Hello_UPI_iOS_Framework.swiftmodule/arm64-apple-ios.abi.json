@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Hello_UPI_iOS_Framework",
+    "printedName": "Hello_UPI_iOS_Framework",
     "children": [
       {
         "kind": "Import",
@@ -177,6 +177,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -369,7 +385,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -577,6 +609,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -698,7 +746,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -804,6 +868,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1569,6 +1649,9 @@
             "moduleName": "Hello_UPI_iOS_Framework",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1610,6 +1693,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1812,7 +1909,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1999,6 +2112,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2176,1036 +2303,658 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
       "kind": "StringLiteral",
       "offset": 321,
       "length": 10,
       "value": "\"AESCrypt\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
       "kind": "Array",
       "offset": 556,
       "length": 139,
       "value": "[0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AES_ALGO.swift",
       "kind": "BooleanLiteral",
       "offset": 739,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/AudioView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/AudioView.swift",
       "kind": "BooleanLiteral",
       "offset": 307,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/AudioView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/AudioView.swift",
       "kind": "BooleanLiteral",
       "offset": 1871,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "StringLiteral",
       "offset": 1848,
       "length": 7,
       "value": "\"HEllo\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "BooleanLiteral",
       "offset": 1871,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "BooleanLiteral",
       "offset": 1897,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "StringLiteral",
       "offset": 1951,
       "length": 7,
       "value": "\"Surya\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "StringLiteral",
       "offset": 1968,
       "length": 12,
       "value": "\"9566172612\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "StringLiteral",
       "offset": 2044,
       "length": 7,
       "value": "\"Surya\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/MessageBubbleView.swift",
       "kind": "StringLiteral",
       "offset": 2061,
       "length": 12,
       "value": "\"9566172612\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Services\/WebServices.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Services\/WebServices.swift",
       "kind": "StringLiteral",
       "offset": 6314,
       "length": 6,
       "value": "\"Post\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Services\/WebServices.swift",
-      "kind": "StringLiteral",
-      "offset": 6314,
-      "length": 6,
-      "value": "\"Post\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 380,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 406,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "Array",
       "offset": 430,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "Array",
       "offset": 482,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "Array",
       "offset": 541,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 588,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ViewModels\/ChatMessageViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 733,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/DependencyContainer.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/DependencyContainer.swift",
       "kind": "Dictionary",
       "offset": 203,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 184,
       "length": 11,
       "value": "\"Speak now\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 19,
       "value": "\"Started Listening\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 18,
       "value": "\"Processing audio\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 315,
       "length": 16,
       "value": "\"Processing nlp\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 14,
       "value": "\"Finished nlp\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 11,
-      "value": "\"Speak now\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 19,
-      "value": "\"Started Listening\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 271,
-      "length": 18,
-      "value": "\"Processing audio\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 315,
-      "length": 16,
-      "value": "\"Processing nlp\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 355,
-      "length": 14,
-      "value": "\"Finished nlp\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/AudioEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 386,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 279,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 319,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "StringLiteral",
       "offset": 360,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 7,
       "value": "\"en-US\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "FloatLiteral",
       "offset": 1083,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "FloatLiteral",
       "offset": 1147,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "FloatLiteral",
       "offset": 1299,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/AudioModule\/CustomAudioSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 1311,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/ChatView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/ChatView.swift",
       "kind": "IntegerLiteral",
       "offset": 229,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/ChatView.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Views\/ChatView.swift",
       "kind": "FloatLiteral",
       "offset": 312,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 204,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 225,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 287,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 308,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 351,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 393,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 435,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
       "kind": "IntegerLiteral",
       "offset": 454,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 185,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 204,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 225,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 264,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 287,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 308,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 372,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 393,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 416,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 435,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 454,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 185,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 204,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 225,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 244,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 264,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 287,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 308,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 372,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 393,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 416,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 435,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Languages.swift",
-      "kind": "IntegerLiteral",
-      "offset": 454,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/SingletonHelper\/NetworkMonitor.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/SingletonHelper\/NetworkMonitor.swift",
       "kind": "BooleanLiteral",
       "offset": 350,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 3,
       "value": "\"3\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 171,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/EnvironmentConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 3,
-      "value": "\"3\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 369,
       "length": 24,
       "value": "\"Sdkchunksreckv1Channel\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 11,
       "value": "\"subscribe\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 460,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 501,
       "length": 14,
       "value": "\"voice_sample\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 546,
       "length": 13,
       "value": "\"text_sample\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 6,
       "value": "\"stop\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "IntegerLiteral",
       "offset": 1101,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/WebSocket\/WebSocket.swift",
       "kind": "IntegerLiteral",
       "offset": 1139,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/SynchronizedProperty.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/SynchronizedProperty.swift",
       "kind": "StringLiteral",
       "offset": 248,
       "length": 34,
       "value": "\"com.example.synchronizedProperty\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ContactsModule\/ContactsManager.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/ContactsModule\/ContactsManager.swift",
       "kind": "Array",
       "offset": 251,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 17,
       "value": "\"balance_enquiry\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 12,
       "value": "\"change_pin\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 11,
       "value": "\"reset_pin\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 13,
       "value": "\"p2p_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 7,
       "value": "\"greet\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 6,
       "value": "\"exit\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 17,
       "value": "\"need_assistance\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 26,
       "value": "\"electricity_bill_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 500,
       "length": 24,
       "value": "\"piped_gas_bill_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 552,
       "length": 17,
       "value": "\"fastag_recharge\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 21,
       "value": "\"mobile_bill_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 655,
       "length": 22,
       "value": "\"lpg_gas_bill_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 704,
       "length": 16,
       "value": "\"fastag_balance\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 745,
       "length": 14,
       "value": "\"bill_payment\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 171,
-      "length": 17,
-      "value": "\"balance_enquiry\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 211,
-      "length": 12,
-      "value": "\"change_pin\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 245,
-      "length": 11,
-      "value": "\"reset_pin\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 285,
-      "length": 13,
-      "value": "\"p2p_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 322,
-      "length": 7,
-      "value": "\"greet\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 346,
-      "length": 6,
-      "value": "\"exit\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 380,
-      "length": 17,
-      "value": "\"need_assistance\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 439,
-      "length": 26,
-      "value": "\"electricity_bill_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 500,
-      "length": 24,
-      "value": "\"piped_gas_bill_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 552,
-      "length": 17,
-      "value": "\"fastag_recharge\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 601,
-      "length": 21,
-      "value": "\"mobile_bill_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 655,
-      "length": 22,
-      "value": "\"lpg_gas_bill_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 704,
-      "length": 16,
-      "value": "\"fastag_balance\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 745,
-      "length": 14,
-      "value": "\"bill_payment\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 2665,
       "length": 10,
       "value": "\"complete\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 2698,
       "length": 12,
       "value": "\"incomplete\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
       "kind": "StringLiteral",
       "offset": 2728,
       "length": 7,
       "value": "\"await\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 2665,
-      "length": 10,
-      "value": "\"complete\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 2698,
-      "length": 12,
-      "value": "\"incomplete\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Models\/IntentEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 2728,
-      "length": 7,
-      "value": "\"await\""
-    },
-    {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
       "kind": "BooleanLiteral",
       "offset": 282,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
       "kind": "StringLiteral",
       "offset": 324,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
       "kind": "BooleanLiteral",
       "offset": 360,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
       "kind": "Array",
       "offset": 406,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/AppSharedData.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 60,
       "value": "\"https:\/\/uatvoicepro.tonetag.com\/api\/v1\/ext_nlp\/process_txt\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 60,
       "value": "\"https:\/\/uatvoicepro.tonetag.com\/api\/v1\/ext_nlp\/latest_stat\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 29,
       "value": "\"RESET_AUDIO_SESSION_SPEAKER\""
     },
     {
-      "filePath": "\/Users\/gj\/Downloads\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
+      "filePath": "\/Users\/cumulations\/Documents\/Projects\/ToneTag\/HelloUPI\/hello-upi-ios-framework\/Hello UPI iOS Framework\/Utility\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 25,
       "value": "\"AUDIO_PROCESSING_STATUS\""
     },
     {
-      "filePath": "\/Users\/gj\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-akkrzpwlwxvjfbguznuydypkwnnv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/cumulations\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-fmvztitadtuheeenwwbucaefyxde\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 721,
       "length": 6,
       "value": "\"img1\""
     },
     {
-      "filePath": "\/Users\/gj\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-akkrzpwlwxvjfbguznuydypkwnnv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/cumulations\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-fmvztitadtuheeenwwbucaefyxde\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 6,
       "value": "\"img2\""
     },
     {
-      "filePath": "\/Users\/gj\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-akkrzpwlwxvjfbguznuydypkwnnv\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/cumulations\/Library\/Developer\/Xcode\/DerivedData\/Hello_UPI_iOS_Framework-fmvztitadtuheeenwwbucaefyxde\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Hello UPI iOS Framework\/IntermediateBuildFilesPath\/Hello UPI iOS Framework.build\/Release-iphoneos\/Hello UPI iOS Framework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 969,
       "length": 6,
