@@ -17,7 +17,7 @@ Minimum Deployment iOS version should be iOS 14
 * Add NSContactsUsageDescription
 
 ### How to request activation keys
-We’re excited for you to explore the integration showcased in this repository! To get started with a trial, simply drop us a request at <a href="mailto:dev&#64;xyz&#46;com">Contact Us</a> with the following details:
+We’re excited for you to explore the integration showcased in this repository! To get started with a trial, simply drop us a request at <a href="mailto:dev&#64;tonetag&#46;com">Contact Us</a> with the following details:
 
 - Company Name  
 - Contact Name  
