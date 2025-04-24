@@ -19,8 +19,9 @@ Minimum Deployment iOS version should be iOS 14
 ### How to request activation keys
 We’re excited for you to explore the integration showcased in this repository! To get started with a trial, simply drop us a request at <a href="mailto:dev&#64;xyz&#46;com">Contact Us</a> with the following details:
 
-Company Name
-Contact Name
-Company Email
-Phone Number
+- Company Name  
+- Contact Name  
+- Company Email  
+- Phone Number
+  
 Once we receive your request, we’ll promptly share your trial activation keys so you can dive right in. Looking forward to having you onboard and hearing your feedback!
